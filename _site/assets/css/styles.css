@@ -97,3 +97,22 @@ body {
 .content a {
   color: #0b6efd;
 }
+
+.content img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.image-row {
+  display: flex;
+  gap: 0.75rem;        /* space between images */
+  margin: 1rem 0;
+}
+
+.image-row img {
+  width: 100%;         /* fill its flex slot */
+  height: auto;        /* keep aspect ratio */
+  display: block;
+}
+

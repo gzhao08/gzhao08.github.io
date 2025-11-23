@@ -17,4 +17,4 @@ Fully functional Gameboy clone made on a DE1-SoC FPGA.
 
 # Contact
 gzhao08@student.ubc.ca  
-www.linkedin.com/in/gzhao08
+[gzhao08](www.linkedin.com/in/gzhao08)

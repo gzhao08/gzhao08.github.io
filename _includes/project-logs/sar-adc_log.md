@@ -16,7 +16,17 @@ Learned:
 
 Notes:
 - Comparator works well in the regenerative phase but has a lot of spiky behavior (Figures show CLK(white), vout1(red), and vin1(pink) Note vin2 is 500mV)
-![Clock waveform]({{ '/assets/img/projects/sar-adc/2025-11-17-clk.png' | relative_url }})
+
+| ![img1]({{ '/assets/img/projects/sar-adc/2025-11-17-clk.png' | relative_url }}) | ![img2]({{ '/assets/img/projects/sar-adc/2025-11-17-vin.png' | relative_url }}) | ![img3]({{ '/assets/img/projects/sar-adc/2025-11-17-vout.png' | relative_url }}) |
+| --- | --- | --- |
+
+![SHA Sim]({{ '/assets/img/projects/sar-adc/2025-11-17-sha.png' | relative_url }})
+
+
+
+
+
+
 
 
 
