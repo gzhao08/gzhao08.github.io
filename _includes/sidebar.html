@@ -1,0 +1,22 @@
+<header class="sidebar-header">
+  <h1 class="site-title">
+    <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+  </h1>
+  <p class="site-tagline">{{ site.description }}</p>
+</header>
+
+<nav class="sidebar-nav">
+  <h2 class="sidebar-section-title">Navigation</h2>
+  <ul>
+    <li><a href="{{ '/' | relative_url }}">Home</a></li>
+  </ul>
+
+  <h2 class="sidebar-section-title">Projects</h2>
+  <ul>
+    {% for project in site.projects %}
+      <li>
+        <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

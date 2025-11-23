@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SAR ADC – Gordon Zhao</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+  <body>
+    <div class="page">
+      <aside class="sidebar">
+        <header class="sidebar-header">
+  <h1 class="site-title">
+    <a href="/">Gordon Zhao</a>
+  </h1>
+  <p class="site-tagline">Engineering physics student – projects and notes</p>
+</header>
+
+<nav class="sidebar-nav">
+  <h2 class="sidebar-section-title">Navigation</h2>
+  <ul>
+    <li><a href="/">Home</a></li>
+  </ul>
+
+  <h2 class="sidebar-section-title">Projects</h2>
+  <ul>
+    
+      <li>
+        <a href="/projects/sar-adc/">SAR ADC</a>
+      </li>
+    
+  </ul>
+</nav>
+
+      </aside>
+
+      <main class="content">
+        <h1 id="sar-adc">SAR ADC</h1>
+
+<p>An analog-to-digital converter targeting 0-1V input at 100MS/s.</p>
+
+<ul>
+  <li><strong>Tools:</strong> Cadence Virtuoso, Verilog</li>
+  <li><strong>Concepts:</strong> Analog and digital design</li>
+  <li><strong>Status:</strong> Ongoing</li>
+</ul>
+
+<h2 id="project-log">Project Log</h2>
+<h3 id="2025-11-17">2025-11-17</h3>
+<p>Goals:</p>
+<ul>
+  <li>Understand how a dynamic comparator works (Strong-Arm topology)</li>
+  <li>Comparator circuit and understanding from: https://arxiv.org/pdf/2209.07259</li>
+  <li>Create schematic for comparator and simulate</li>
+  <li>Implement a simple SHA circuit</li>
+</ul>
+
+<p>Achieved:</p>
+<ul>
+  <li>Completed a comparator with default nmos1v and pmos1v devices (default sizes)</li>
+  <li>Created a very simple SHA circuit (transmission gate + capacitive holding need to add source follower/buffer)</li>
+</ul>
+
+<p>Learned:</p>
+<ul>
+  <li>Getting more comfortable with Cadence workflow</li>
+  <li>Debugging skills (initially, I forgot to connect the pmos switches)</li>
+  <li>How a dynamic comparator works (pre charge capacitances, use the different discharge times to turn on transistors that pull-up or pull-down the output voltage (like 253 H-bridge))</li>
+</ul>
+
+<p>Notes:</p>
+<ul>
+  <li>Comparator works well in the regenerative phase but has a lot of spiky behavior (Figures show CLK(white), vout1(red), and vin1(pink) Note vin2 is 500mV)
+<img src="/assets/img/projects/sar-adc/2025-11-17-clk.png" alt="Clock waveform" /></li>
+</ul>
+
+<h3 id="2025-11-15">2025-11-15</h3>
+<p>Goals:</p>
+<ul>
+  <li>Familizarize with Cadence</li>
+  <li>Do a simple inverter simulation</li>
+</ul>
+
+<p>Achieved:</p>
+<ul>
+  <li>Simple inverter schematic + simulation</li>
+  <li>Set next step (comparator)</li>
+</ul>
+
+<p>Learned:</p>
+<ul>
+  <li>Cadence workflow (schematic-&gt;symbol-&gt;simulation)</li>
+</ul>
+
+
+      </main>
+    </div>
+  </body>
+</html>

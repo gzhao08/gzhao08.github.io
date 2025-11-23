@@ -1,0 +1,13 @@
+title: "Gordon Zhao"
+description: "Engineering physics student – projects and notes"
+baseurl: ""          # leave empty for user.github.io
+url: ""              # GitHub Pages will fill this in
+
+collections:
+  projects:
+    output: true     # generate pages for each project
+    permalink: /projects/:name/
+
+# Optional but nice to have
+markdown: kramdown
+theme: null          # use your own layout/CSS, no built-in theme

@@ -1,0 +1,99 @@
+/* Basic reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.5;
+}
+
+/* Layout */
+.page {
+  display: flex;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100vh;
+  padding: 1.5rem;
+  border-right: 1px solid #ddd;
+  background: #fafafa;
+  overflow-y: auto;
+}
+
+.content {
+  margin-left: 260px;
+  padding: 2rem;
+  max-width: 800px;
+}
+
+/* Sidebar styling */
+.site-title {
+  margin: 0 0 0.25rem;
+  font-size: 1.4rem;
+}
+
+.site-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-tagline {
+  margin: 0 0 1.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.sidebar-section-title {
+  margin: 1.5rem 0 0.5rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #999;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.sidebar-nav li {
+  margin-bottom: 0.25rem;
+}
+
+.sidebar-nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.sidebar-nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main content (Markdown) */
+.content h1,
+.content h2,
+.content h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.content p {
+  margin: 0.5rem 0;
+}
+
+.content ul,
+.content ol {
+  padding-left: 1.25rem;
+}
+
+.content a {
+  color: #0b6efd;
+}
