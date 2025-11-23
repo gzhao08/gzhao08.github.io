@@ -1,7 +1,7 @@
 ### 2025-11-17
 Goals:
 - Understand how a dynamic comparator works (Strong-Arm topology)
-- Comparator circuit and understanding from: https://arxiv.org/pdf/2209.07259 
+- Comparator circuit and understanding from: [arxiv.org/pdf/2209.07259](https://arxiv.org/pdf/2209.07259) 
 - Create schematic for comparator and simulate
 - Implement a simple SHA circuit
 
