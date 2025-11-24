@@ -26,7 +26,15 @@
   <ul>
     
       <li>
+        <a href="/projects/gameboy-clone/">Gameboy Clone</a>
+      </li>
+    
+      <li>
         <a href="/projects/sar-adc/">SAR ADC</a>
+      </li>
+    
+      <li>
+        <a href="/projects/wafer/">Wafer Testing</a>
       </li>
     
   </ul>
@@ -46,6 +54,41 @@
 </ul>
 
 <h2 id="project-log">Project Log</h2>
+<h3 id="2025-11-19">2025-11-19</h3>
+<p>Goals:</p>
+<ul>
+  <li>test inverted comparator</li>
+</ul>
+
+<p>Notes:</p>
+<ul>
+  <li>comparator works great for lower voltages and actually has less settling time when compared to the original (as the cross-coupled latches are now nmos and electrons have higher mobility than holes)</li>
+</ul>
+
+<h3 id="2025-11-19-1">2025-11-19</h3>
+<p>Goals:</p>
+<ul>
+  <li>think of solutions to fixing comparator for lower voltages</li>
+</ul>
+
+<p>Notes:</p>
+<ul>
+  <li>flipping the comparator and creating it with nmos switches and pmos inputs will work well for low voltage (might not work well at higher though)</li>
+</ul>
+
+<h3 id="2025-11-18">2025-11-18</h3>
+<p>Goals:</p>
+<ul>
+  <li>Comparator testing</li>
+</ul>
+
+<p>Notes:</p>
+<ul>
+  <li>Learn about cdac</li>
+  <li>Compared 499.5mV, 499.95mV, 500.5mV, and 500.05mV against 500mV and was able to successfully compare (settling time ~ 4ns)</li>
+  <li>comparator works well for higher voltages (&gt;5V) but works worse and worse. this makes sense as eventially the input voltages are not enough to bias the nmos into strong inversion</li>
+</ul>
+
 <h3 id="2025-11-17">2025-11-17</h3>
 <p>Goals:</p>
 <ul>
@@ -73,8 +116,19 @@
   <li>Comparator works well in the regenerative phase but has a lot of spiky behavior (Figures show CLK(white), vout1(red), and vin1(pink) Note vin2 is 500mV)</li>
 </ul>
 
-<p>| <img src="/assets/img/projects/sar-adc/2025-11-17-clk.png" alt="img1" /> | <img src="/assets/img/projects/sar-adc/2025-11-17-vin.png" alt="img2" /> | <img src="/assets/img/projects/sar-adc/2025-11-17-vout.png" alt="img3" /> |
-| — | — | — |</p>
+<table>
+  <tbody>
+    <tr>
+      <td><img src="/assets/img/projects/sar-adc/2025-11-17-clk.png" alt="img1" /></td>
+      <td><img src="/assets/img/projects/sar-adc/2025-11-17-vin.png" alt="img2" /></td>
+      <td><img src="/assets/img/projects/sar-adc/2025-11-17-vout.png" alt="img3" /></td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>SHA Simulation:</li>
+</ul>
 
 <p><img src="/assets/img/projects/sar-adc/2025-11-17-sha.png" alt="SHA Sim" /></p>
 

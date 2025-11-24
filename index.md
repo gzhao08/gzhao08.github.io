@@ -15,6 +15,9 @@ An analog-to-digital converter targeting 0-1V input at 100MS/s.
 ## Gameboy Clone
 Fully functional Gameboy clone made on a DE1-SoC FPGA.
 
+## Wafers & Interferometry
+Analyzing wafers using interferometry and C++.
+
 # Contact
 gzhao08@student.ubc.ca  
-[gzhao08](www.linkedin.com/in/gzhao08)
+[gzhao08](https://www.linkedin.com/in/gzhao08)
