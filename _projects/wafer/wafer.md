@@ -30,21 +30,21 @@ The wafer with and without the mask looks like
 
 When taking sample measurements, my coworker noticed that if you set the resolution very low, the measurement could essentially "bypass" the mask allowing you to get a general view of the wafer. This looks like: 
 
-![img1]({{ '/assets/img/projects/wafer/wafer_photos/base_data/z.png' | relative_url }})
+![img3]({{ '/assets/img/projects/wafer/wafer_photos/base_data/z.png' | relative_url }})
 
 As you can see you get a general shape but the mask still messes with the measurement so the first step is to interpolate the missing data. I used a nearest neighbours interpolation method to get
 
-![img1]({{ '/assets/img/projects/wafer/wafer_photos/Z_Data/z_interpolated.png' | relative_url }})
+![img4]({{ '/assets/img/projects/wafer/wafer_photos/Z_Data/z_interpolated.png' | relative_url }})
 
 Next, if we turn the resolution back up, we can get the locations of the holes in the mask, the "actual" data points. The raw measurement looks like
 
-![img1]({{ '/assets/img/projects/wafer/wafer_photos/base_data/wafer.png' | relative_url }})
+![img5]({{ '/assets/img/projects/wafer/wafer_photos/base_data/wafer.png' | relative_url }})
 
 As you can see, the shapes and sizes of the holes are messed up and (if we look closely) the measurements are off too.
 
 The task now is to merge (overlay) and use the XY data as a mask on the interpolated Z data. If we also do some fixing of the clusters of data points we can arrive at a very good model of the actual data in the mask.
 
-![img1]({{ '/assets/img/projects/wafer/wafer_photos/XY_Data/enhanced_wafer2.png' | relative_url }})
+![img6]({{ '/assets/img/projects/wafer/wafer_photos/XY_Data/enhanced_wafer2.png' | relative_url }})
 
 Note that the data on the edges are commonly cropped so edge distortion can be ignored.
 
