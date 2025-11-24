@@ -15,7 +15,7 @@ title: "ENPH 253/Robot Summer"
 
 Every summer, second year UBC Engineering Physics students take a course called ENPH 253 where students have 5 weeks to design, build, and use a robot in a competition. In my year (2025), our competition was to drive around a platform, collecting pet stuffies to "save" them from a fire. The competition platform looked like:
 
-| ![img1]({{ 'assets\img\projects\enph-253\platform-2d.png' | relative_url }}) | ![img2]({{ 'assets\img\projects\enph-253\platform-3d.png' | relative_url }}) |
+| ![img1]({{ '/assets/img/projects/enph-253/platform-2d.png' | relative_url }}) | ![img2]({{ '/assets/img/projects/enph-253/platform-3d.png' | relative_url }}) |
 
 There is also a strip of black electrical tape that gives a generic path that the robot can follow as all the robots must be completely autonomous. You can find out more information about the competition and the EngPhys Project lab at  [https://projectlab.engphys.ubc.ca/enph-253-2025/](https://projectlab.engphys.ubc.ca/enph-253-2025/).
 
