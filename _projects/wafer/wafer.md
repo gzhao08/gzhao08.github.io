@@ -22,7 +22,7 @@ My goal was to figure out how to get an accurate model of the surface shape with
 
 The scripts made to do the following analysis were first written in Python, then Matlab, and finally in C++ where it was integrated into the company software.
 
-## Summary
+## Summary (very brief)
 
 The wafer with and without the mask looks like 
 
