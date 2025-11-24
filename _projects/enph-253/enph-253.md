@@ -9,6 +9,7 @@ title: "ENPH 253/Robot Summer"
 - **Tools:** C++, Altium Designer
 - **Concepts:** Robotics, Software, Electronic Design
 - **Status:** Completed
+- **Repo:** [ENPH-253---Pet-Saver](https://github.com/gzhao08/ENPH-253---Pet-Saver) 
 
 ## Background
 
@@ -16,7 +17,7 @@ Every summer, second year UBC Engineering Physics students take a course called 
 
 | ![img1]({{ 'assets\img\projects\enph-253\platform-2d.png' | relative_url }}) | ![img2]({{ 'assets\img\projects\enph-253\platform-3d.png' | relative_url }}) |
 
-There is also a strip of black electrical tape that gives a generic path that the robot can follow as all the robots must be completely autonomous.
+There is also a strip of black electrical tape that gives a generic path that the robot can follow as all the robots must be completely autonomous. You can find out more information about the competition and the EngPhys Project lab at  [https://projectlab.engphys.ubc.ca/enph-253-2025/](https://projectlab.engphys.ubc.ca/enph-253-2025/).
 
 ## H-Bridge Design
 
@@ -28,10 +29,42 @@ Since we had no pmos in the lab, we had to make the circuit out of 4 nmos acting
 
 <img src='\..\..\assets\img\projects\enph-253\LT1161.png' width="300">
 
-Using the LT1161 IC, I made two different H-Bridge circuits. The first would be considered a more standard circuit, which uses the input and gate pins.
+Using the LT1161 IC, I made two different H-Bridge circuits. The first would be considered a more standard circuit, which uses the input and gate pins. The schematic, 2D, and 3D renders are shown below.
+
+<img src='\..\..\assets\img\projects\enph-253\h-bridge-schematic.png' width="500">
+
+<img src='\..\..\assets\img\projects\enph-253\h-bridge_pcb2D.png' width="500">
+
+<img src='\..\..\assets\img\projects\enph-253\h-bridge_pcb3D.png' width="500">
+
+The smaller MOSFETs are used to prevent shoot-through or essentially a situation where excess charge on the gates turn on unwanted transistors. Essentially they cross latch the gates and when one pair of gates are being actively driven, the others are actively pulled to ground.
+As shown, this design is a very compact way to use the LT1161 in an H-Bridge and was the design we ended up using in the final robot.
+
+The second design uses the timer pins on the LT1161 as enable pins.
+
+<img src='\..\..\assets\img\projects\enph-253\schematic.png' width="500">
+
+<img src='\..\..\assets\img\projects\enph-253\2D.png' width="500">
+
+<img src='\..\..\assets\img\projects\enph-253\3D.png' width="500">
+
+
 
 ## Photos and videos from Robot Summer
 
+When the PCBs first came:  
+<img src='\..\..\assets\img\projects\enph-253\pcb_packaged.jpg' width="400">
+
+First assembled H-Bridge:  
+<img src='\..\..\assets\img\projects\enph-253\pcb_assembled.jpg' width="400">
+
+Some line follow videos:  
+<video controls src="\..\..\assets\img\projects\enph-253\line_follow1.mp4"></video>
+
+<video controls src="\..\..\assets\img\projects\enph-253\line_follow2.mp4"></video>
+
+First pet saved:  
+<video controls src="\..\..\assets\img\projects\enph-253\pet1.mp4"></video>
 
 
 
